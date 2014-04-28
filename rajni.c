@@ -674,6 +674,7 @@ rajnival* builtin_add(rajnienv* e, rajnival* a) { return builtin_op(e, a, "+"); 
 rajnival* builtin_power(rajnienv* e, rajnival* a) { return builtin_op(e, a, "^"); }
 rajnival* builtin_sub(rajnienv* e, rajnival* a) { return builtin_op(e, a, "-"); }
 rajnival* builtin_mul(rajnienv* e, rajnival* a) { return builtin_op(e, a, "*"); }
+rajnival* builtin_mod(rajnienv* e, rajnival* a) { return builtin_op(e, a, "%"); }
 rajnival* builtin_div(rajnienv* e, rajnival* a) { return builtin_op(e, a, "/"); }
 rajnival* builtin_equal(rajnienv* e, rajnival* a) { return builtin_op(e, a, "=="); }
 rajnival* builtin_greaterthan(rajnienv* e, rajnival* a) { return builtin_op(e, a, ">"); }
@@ -916,6 +917,7 @@ void rajnienv_add_builtins(rajnienv* e) {
   rajnienv_add_builtin(e, "anbuna_enanu_theriyuma",    builtin_and);
   rajnienv_add_builtin(e, "aarupadaiyappa",    builtin_or);
   rajnienv_add_builtin(e, "yen_vazhi_thani_vazhi",   builtin_if);
+  rajnienv_add_builtin(e, "bayalagam",   builtin_mod);
   rajnienv_add_builtin(e, "load", builtin_load);
   rajnienv_add_builtin(e, "andavan_solran_arunachalam_mudikran",   builtin_print);
   rajnienv_add_builtin(e, "oru_thadava_sonna_noru_thadava_sona_madiri",  builtin_printloop);
