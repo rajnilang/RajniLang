@@ -1,0 +1,33 @@
+OruvanOruvanMudharali {
+
+	//Variables
+	style cool;style oneMore; style final;
+
+	cool ~ 2;
+
+	andavan_solran_arunachalam_mudikran(cool);
+
+	oneMore ~ 3;
+
+	final ~ 12;
+
+	//IF..ELSE
+	yen_vazhi(3<2)
+	{
+		8-2;
+	}thani_vazhi
+	{
+		2+4;
+	};
+
+	andavan_solran_arunachalam_mudikran(final);
+
+	//Loop
+  for(i~1;i#2;i+1)
+  {
+    andavan_solran_arunachalam_mudikran(SuperStar);
+	};
+
+	andavan_solran_arunachalam_mudikran(oneMore);
+
+}
