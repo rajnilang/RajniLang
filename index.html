@@ -32,17 +32,20 @@
 
 <p>1.To use the interactive repl go to the directory if cloned</p>
 
-<p>Type "./rajni"</p>
+<pre><code>Type "./rajni"
+</code></pre>
 
 <p>or</p>
 
 <p>To execute a file written in Rajnilang use</p>
 
-<p>"./rajni " </p>
+<pre><code>"./rajni &lt;file_name&gt;" 
+</code></pre>
 
 <p>2.If you want to build Rajnilang from source</p>
 
-<p>"cc -std=c99 -Wall rajni.c mpc.c -ledit -lm -o rajni"</p>
+<pre><code>"cc -std=c99 -Wall rajni.c mpc.c -ledit -lm -o rajni"
+</code></pre>
 
 <p>Then follow step1.</p>
 
@@ -51,6 +54,152 @@
 <p>Everything in Rajnilang is an object</p>
 
 <p>Getting started </p>
+
+<p>Welcome to the RajniLang wiki!</p>
+
+<p>This is a step by step tutorial on getting started with RajniLang</p>
+
+<p>Everything in rajnilang is an object and can be stored in a variable just like javascript.
+To set a variable use the following syntax</p>
+
+<pre><code>style {l} 23
+</code></pre>
+
+<p>This will create a variable named l with value 23. We can similarly set string or function as a value.</p>
+
+<p>Multiple assignments can be done as below</p>
+
+<pre><code>style {l m} 23 24
+</code></pre>
+
+<p>which is equivalent to : "l=23 , m=24"</p>
+
+<p>This will set l to the value 23 and m to the value 24</p>
+
+<p><strong>Arithmetic operations</strong></p>
+
+<pre><code>lagalaga l 40
+</code></pre>
+
+<p>which is equivalent to </p>
+
+<p>l=40</p>
+
+<p>This will set the value 40 to l if doesn't exist it creates a new variable l and sets it.</p>
+
+<pre><code>kooti_kalichu_paru_sariya_varum_+ 2 3
+</code></pre>
+
+<p>which is equivalent to</p>
+
+<p>2+3</p>
+
+<pre><code>kooti_kalichu_paru_sariya_varum_- 2 3
+</code></pre>
+
+<p>which is equivalent to</p>
+
+<p>2-3</p>
+
+<pre><code>"sathigam" which is equivalent to multiplication
+
+"prachodhagam" which is equivalent to division
+
+"bayalagam" which is equivalent to percentage
+</code></pre>
+
+<p><strong>Conditional statements</strong></p>
+
+<pre><code>yen_vazhi_thani_vazhi(lagalagalagalaga 2 3) { andavan_solran_arunachalam_mudikran "true"} {    ena_pathi_uanku_theriyadhu "false" }
+</code></pre>
+
+<p>which is equivalent to
+ if(2==3)
+{ 
+console.log("true") 
+} 
+else
+{ 
+console.error("false") 
+} </p>
+
+<p>Logical operations</p>
+
+<pre><code>anbuna_enanu_theriyuma 0 1
+</code></pre>
+
+<p>which is equivalent to 0 &amp;&amp; 1</p>
+
+<pre><code>aarupadaiyappa 0 1
+</code></pre>
+
+<p>which is equivalent to 0 || 1</p>
+
+<p><strong>Comparision operations</strong></p>
+
+<pre><code>adhigama_asai_padra_ambalayum 2 3
+</code></pre>
+
+<p>which is equivalent to 2 &gt; 3</p>
+
+<pre><code>kamiya_kovapadadha_pombalayum 2 3
+</code></pre>
+
+<p>which is equivalent to 2 &lt; 3</p>
+
+<p><strong>Basic print statement</strong></p>
+
+<pre><code>andavan_solran_arunachalam_mudikran "Hello world"
+</code></pre>
+
+<p>console.log("Hello world")</p>
+
+<pre><code>ena_pathi_unaku_theriyadhu "Not found"
+</code></pre>
+
+<p>console.error("Not found")</p>
+
+<p><strong>Special feature</strong></p>
+
+<pre><code>oru_thadava_sonna_noru_thadava_sona_madiri "Baasha"
+</code></pre>
+
+<p>which is equivalent to "Baasha" 100 times</p>
+
+<p><strong>Functions</strong></p>
+
+<p>Rajnilang has global and local scopes similar to javascript. It does not have the concept of classes and is a purely functional language.</p>
+
+<pre><code>style {l} (elam_maye {x y} {andavan_solran_arunachalam_mudikran (kooti_kalichu_paru_sariya_varum_+ 2 3)})
+</code></pre>
+
+<p>which is equivalent to </p>
+
+<p>l = function(x,y)
+{
+    console.log(x+y);
+}</p>
+
+<p>To invoke this method use l 2 3 this will print 5 </p>
+
+<p><strong>Examples which explain recursion</strong></p>
+
+<pre><code>style {muthu} ( elam_maye {x y} { yen_vazhi_thani_vazhi (aarupadaiyappa (adhigama_asai_padra_ambalayum x y) (lagalagalagalaga x y) ) { andavan_solran_arunachalam_mudikran "true"} { muthu 1 1} })
+</code></pre>
+
+<p>muthu 0 1 to run this program</p>
+
+<p>var muthu = function(x,y)
+{
+    if((x&gt;y)||(x==y))
+    {
+        console.log("true")
+    }
+    else
+    {
+        muthu(1,1);<br>
+    }
+}</p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/rajnilang">rajnilang</a></p>
